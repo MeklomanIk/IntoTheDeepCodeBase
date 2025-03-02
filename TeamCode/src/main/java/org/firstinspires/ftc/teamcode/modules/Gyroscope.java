@@ -7,11 +7,11 @@ import com.qualcomm.robotcore.hardware.IMU;
 import org.firstinspires.ftc.robotcore.external.Telemetry;
 import org.firstinspires.ftc.robotcore.external.navigation.AngleUnit;
 
-public class IMUSensor {
+public class Gyroscope {
     private Telemetry telemetry;
     private IMU imu;
 
-    public IMUSensor(LinearOpMode opMode) {
+    public Gyroscope(LinearOpMode opMode) {
         telemetry = opMode.telemetry;
         imu = opMode.hardwareMap.get(IMU.class, "imu");
         imu.initialize(new IMU.Parameters(new RevHubOrientationOnRobot(RevHubOrientationOnRobot.LogoFacingDirection.UP,
